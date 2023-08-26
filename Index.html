@@ -15,7 +15,7 @@
 
 
 <body>
-    
+
     <div class="header">
         <nav>
             <img src="./logo.png" class="logo">
@@ -28,14 +28,14 @@
             <h1>Enjoy big movies, hit series and more from ₹ 149.
                 <h3>Join today. Cancel anytime.</h3>
                 <h5> Ready to watch? Enter your email to create or restart your membership.</h5>
-                
+
                 <form class="email-signup" onsubmit="return validateEmail(event)">
                     <input type="email" id="email" placeholder="Email address" required>
                     <div id="error-message" class="error-message"></div>
                     <button type="submit">Get started</button>
                 </form>
-                
-                
+
+
         </div>
     </div>
     <div class="features">
@@ -174,36 +174,36 @@
         <button class="language-btn">English <img src="./down-icon.png" alt=""></button>
         <p class="copyright-text">Netflix India</p>
     </div>
-   
+
 
 
 
     <script>
         function validateEmail(event) {
-            event.preventDefault(); 
-    
+            event.preventDefault();
+
             const emailInput = document.getElementById('email');
             const errorMessage = document.getElementById('error-message');
-    
+
             const email = emailInput.value.trim();
-    
-          
+
+
             const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailPattern.test(email)) {
                 errorMessage.textContent = 'Please enter a valid email address';
                 return false;
             }
-    
-           
+
+
             errorMessage.textContent = '';
-    
-           
-    
+
+
+
             return true;
         }
     </script>
-    
-   
+
+
 
 
 
